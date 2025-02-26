@@ -29,27 +29,28 @@ This is a web-based **FizzBuzz-like** game with an **Admin Portal** for managing
 ```sh
 git clone https://github.com/rojeena/fizzbuzz.git
 
-### 2️⃣ Backend Setup  
-Navigate to the backend folder:  
+```
+### 2️⃣ Backend Setup    
+
 ```sh
 cd FizzBuzzGameAPI
-
-### Run the .NET server:
-
 dotnet run
-
+```
 The backend will start at http://localhost:5000.
 
-
+### 3️⃣ Frontend Setup 
+```sh
 cd fizzbuzz-frontend
 npm install
 npm start
+```
 The frontend will be available at http://localhost:3000.
 
 ### 🔌 API Endpoints
 Game API
-
+```sh
 GET /rules        # Fetch all enabled rules.
 POST /rules       # Add a new rule.
 PUT /rules/:id    # Update a rule (divisor, text, or enable/disable state).
 DELETE /rules/:id # Delete a rule.
+```
